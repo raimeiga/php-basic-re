@@ -1,8 +1,9 @@
 <!--反復の順番
-index.php 
-data.php
-variable.php
-array.php
+index.php（php文の書き方）
+data.php（データ型と四則演算）　
+variable.php（変数）
+array.php（配列）
+associative-array.php（連想配列）
 -->
 
 
@@ -19,7 +20,13 @@ http://localhost/php-basic-re/black_board.php
  
  <body>
      <p>  <!-- ココに正解を -->
-     
+     <?php
+$personal_data = ['name' => '侍太郎', 'age' => 36, 'gender' => '男性'];
+
+echo $personal_data['gender'];
+?>
+
+
 
      </p>
  </body>
