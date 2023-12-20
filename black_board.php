@@ -19,16 +19,12 @@ http://localhost/php-basic-re/black_board.php
  </head>
  
  <body>
-     <p>  <!-- ココに正解を -->
-     <?php
-$personal_data = ['name' => '侍太郎', 'age' => 36, 'gender' => '男性'];
+   <p>
+   <?php
+      $user_names = ['侍太郎', '侍一郎', '侍二郎', '侍三郎', '侍四郎'];
 
-echo $personal_data['gender'];
+      // 2番目の要素である「侍一郎」という文字列が出力される
+      echo $user_names[1];
+      
 ?>
-
-
-
-     </p>
- </body>
- 
- </html>
+   </p>
