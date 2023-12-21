@@ -17,14 +17,30 @@ http://localhost/php-basic-re/black_board.php
      <meta charset="UTF-8">
      <title>PHP基礎編</title>
  </head>
- 
- <body>
-   <p>
-   <?php
-      $user_names = ['侍太郎', '侍一郎', '侍二郎', '侍三郎', '侍四郎'];
+  <p>
+    <?php 
+       $user_names= ['侍太郎','侍一郎','侍二郎','侍三郎','侍四郎' ];
+       print_r($user_names);
 
-      // 2番目の要素である「侍一郎」という文字列が出力される
-      echo $user_names[1];
-      
+       echo '<br>';
+       //配列名［更新したい要素のインデックス］＝更新データ;
+       $user_names[1]='侍花子';
+       $user_names[5]='侍五郎';
+       print_r($user_names);
+       echo '<br>';
+       $user_names= ['侍太郎','侍一郎','侍二郎','侍三郎','侍四郎' ];
+       $user_names[ ]='侍五郎';
+       print_r($user_names);
+       echo '<br>';
+       $user_names= ['侍太郎','侍一郎','侍二郎','侍三郎','侍四郎' ];
+        echo $user_names[2];
+
 ?>
+
+
+  </p>
+
    </p>
+ <body>
+</html>
+   
