@@ -18,25 +18,17 @@ http://localhost/php-basic-re/black_board.php
      <title>PHP基礎編</title>
  </head>
   <p>
-    <?php 
-       $user_names= ['侍太郎','侍一郎','侍二郎','侍三郎','侍四郎' ];
-       print_r($user_names);
+  <?php
+$personal_data = ['name' => '侍太郎', 'age' => 36, 'gender' => '男性'];
 
-       echo '<br>';
-       //配列名［更新したい要素のインデックス］＝更新データ;
-       $user_names[1]='侍花子';
-       $user_names[5]='侍五郎';
-       print_r($user_names);
-       echo '<br>';
-       $user_names= ['侍太郎','侍一郎','侍二郎','侍三郎','侍四郎' ];
-       $user_names[ ]='侍五郎';
-       print_r($user_names);
-       echo '<br>';
-       $user_names= ['侍太郎','侍一郎','侍二郎','侍三郎','侍四郎' ];
-        echo $user_names[2];
+echo $personal_data['gender']; //男性を取得し、出力
 
+echo '<br>';  
+$personal_data['age'] = 37;  // 'age'というキーの値を更新
+$personal_data['address'] = '東京都';  // 新しく要素（キーと値）を追加
+
+print_r($personal_data);   //全てを出力
 ?>
-
 
   </p>
 
