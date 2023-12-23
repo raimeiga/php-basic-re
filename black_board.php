@@ -17,22 +17,20 @@ http://localhost/php-basic-re/black_board.php
      <meta charset="UTF-8">
      <title>PHP基礎編</title>
  </head>
-  <p>
-  <?php
-$personal_data = ['name' => '侍太郎', 'age' => 36, 'gender' => '男性'];
-
-echo $personal_data['gender']; //男性を取得し、出力
-
-echo '<br>';  
-$personal_data['age'] = 37;  // 'age'というキーの値を更新
-$personal_data['address'] = '東京都';  // 新しく要素（キーと値）を追加
-
-print_r($personal_data);   //全てを出力
-?>
-
-  </p>
-
-   </p>
  <body>
+  <?php
+   echo 4.5 + 1.8;
+   echo'<br>';
+   echo 3.0 - 1.2;
+   echo'<br>';
+   echo 1.5 * 6;
+   echo'<br>';
+   echo 3 / 0.3;
+   echo'<br>';
+   echo 45 % 8;
+   echo'<br>';
+   echo 100-99.9; 
+  ?>
+ </body>
 </html>
    
