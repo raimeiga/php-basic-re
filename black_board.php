@@ -19,17 +19,8 @@ http://localhost/php-basic-re/black_board.php
  </head>
  <body>
   <?php
-   echo 4.5 + 1.8;
-   echo'<br>';
-   echo 3.0 - 1.2;
-   echo'<br>';
-   echo 1.5 * 6;
-   echo'<br>';
-   echo 3 / 0.3;
-   echo'<br>';
-   echo 45 % 8;
-   echo'<br>';
-   echo 100-99.9; 
+    $my_name='侍太郎';
+    echo "私の名前は{$my_name}です。"; 
   ?>
  </body>
 </html>
