@@ -19,22 +19,16 @@ http://localhost/php-basic-re/black_board.php
      <title>PHP基礎編</title>
  </head>
  <body>
- <p>
-        <?php
-        // 変数$numに0～4までのランダムな整数を代入する
-        $num = mt_rand(0, 4);
-        // 問:変数$numの値を出力する（確認用）
-        echo $num;
-        echo '<br>';
+   <?php
+      for($i = 1; $i<=10; $i += 1){
+         echo $i.'<br>';
+      
+      if( $i === 5){
+         break;
+      }
+     }
+   ?>
 
-
-        // 問:変数$numの値が4であれば、「大当たりです」という文字列を出力するコードを書け
-        //  それ以外のときは、「はずれです」という文字列を出力するコードを書け
-        
-       
-       
-       ?>
-    </p>
  </body>
 </html>
    
