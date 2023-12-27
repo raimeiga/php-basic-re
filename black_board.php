@@ -19,16 +19,7 @@ http://localhost/php-basic-re/black_board.php
      <title>PHP基礎編</title>
  </head>
  <body>
-   <?php
-      for($i = 1; $i<=10; $i += 1){
-         echo $i.'<br>';
-      
-      if( $i === 5){
-         break;
-      }
-     }
-   ?>
-
+x
+ 
  </body>
-</html>
-   
+ </html>
