@@ -19,7 +19,9 @@ http://localhost/php-basic-re/black_board.php
      <title>PHP基礎編</title>
  </head>
  <body>
-x
- 
+ <p>この文章はhtmlで書いています。</p>
+  
  </body>
  </html>
+
+ 
