@@ -19,6 +19,7 @@ http://localhost/php-basic-re/black_board.php
      <title>PHP基礎編</title>
  </head>
  <body>
+<<<<<<< HEAD
    <p>この文章はhtmlで書いています。</p>
    <p>
     <?php
@@ -117,5 +118,11 @@ http://localhost/php-basic-re/black_board.php
     
    </p>
 
+=======
+ <p>この文章はhtmlで書いています。</p>
+  
+>>>>>>> f79d6e9372c05c672b9f720178e4dbc69380def2
  </body>
  </html>
+
+ 
