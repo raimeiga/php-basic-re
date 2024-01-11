@@ -10,7 +10,7 @@ foreach ($user_names as $user_name) {
    echo $user_name;
 }
 ↓
-問：配列名$user_namesと変数名$問：配列名$user_namesと変数名$user_nameの説明をせよ
+問：配列名$user_namesと変数名$user_nameの説明をせよ
 
 正解
 $user_names：要素を取り出す配列名（複数形）
@@ -33,16 +33,18 @@ $user_names = ['侍太郎', '侍一郎', '侍二郎', '侍三郎', '侍四郎'];
 
 //  配列$user_namesの値（要素）を1つずつ順番に出力する
 foreach ($user_names as $user_name) {
-   echo $user_name;
+   echo $user_name.'<br>';
 }
 ?>
 ------------------------------------------------------------
 
-問:foreach文を使い、配列$user_namesのインデックスと値を1つずつ順番に出力せよ。
+問:foreach文を使い、下記のコードを書け。
+配列$user_namesのインデックスと値を、1つずつ順番に出力せよ。
+配列$user_namesのインデックスを、1つずつ順番に出力せよ。
+配列$user_namesの値を、1つずつ順番に出力せよ。
+
 $user_names = ['侍太郎', '侍一郎', '侍二郎', '侍三郎', '侍四郎'];
 
-<?php
-$user_names = ['侍太郎', '侍一郎', '侍二郎', '侍三郎', '侍四郎'];
 
 正解：
 ------------------------------------------------------------
@@ -53,10 +55,23 @@ $user_names = ['侍太郎', '侍一郎', '侍二郎', '侍三郎', '侍四郎'];
          foreach ($user_names as $index => $value) {
              echo "{$index}:{$value}<br>";
          }
+//  配列$user_namesのインデックスを、1つずつ順番に出力する
+        foreach ($user_names as $index => $value) {
+             echo "{$index}<br>";
+        }
+
+//  配列$user_namesの値を、1つずつ順番に出力する
+        foreach ($user_names as $index => $value) {
+             echo "{$value}<br>";
+        }
 ?>
 ------------------------------------------------------------
 
-問:foreach文を使い、次の連想配列$personal_dataのキーと値を1つずつ順番に出力せよ。
+問:foreach文を使い、下記のコードを書け。
+連想配列$personal_dataのキーと値を1つずつ順番に出力せよ。
+連想配列$personal_dataのキーを、1つずつ順番に出力せよ。
+連想配列$personal_dataのキーを、1つずつ順番に出力せよ。
+
 $personal_data = ['name' => '侍太郎', 'age' => 36, 'gender' => '男性'];
 
 
@@ -65,27 +80,24 @@ $personal_data = ['name' => '侍太郎', 'age' => 36, 'gender' => '男性'];
 <?php
 $personal_data = ['name' => '侍太郎', 'age' => 36, 'gender' => '男性'];
 
-// 連想配列$personal_dataのキーと値を1つずつ順番に出力する
-foreach ($personal_data as $key => $value) {
-    echo "{$key}は{$value}です。";
-}
+    // 連想配列$personal_dataのキーと値を1つずつ順番に出力する
+    foreach ($personal_data as $key => $value) {
+     echo "{$key}は{$value}です。<br>";
+    }
+
+    // 連想配列$personal_dataのキーを、1つずつ順番に出力する
+    foreach ($personal_data as $key => $value) {
+       echo "{$key}<br>";
+    }
+
+    // 連想配列$personal_dataの値を、1つずつ順番に出力する
+        foreach ($personal_data as $key => $value) {
+    echo "{$value}<br>";
+    }
 ?>
 ------------------------------------------------------------
 
-問:foreach文を使い、次の連想配列の値だけを取得し、1つずつ順番に出力せよ。
-$personal_data = ['name' => '侍太郎', 'age' => 36, 'gender' => '男性'];
 
-正解：
-------------------------------------------------------------
-<?php
-$personal_data = ['name' => '侍太郎', 'age' => 36, 'gender' => '男性'];
-
-// 連想配列$personal_dataの値を1つずつ順番に出力する
-foreach ($personal_data as $value) {
-    echo $value;
-}
-?>
-------------------------------------------------------------
 
 
 問：foreach文を使い、次のhtmlで書かれたセレクトボックスのoption要素による選択肢をPHPで出力せよ。
