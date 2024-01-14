@@ -20,14 +20,7 @@ http://localhost/php-basic-re/black_board.php
  </head>
  <body>
 <<<<<<< HEAD
-   <p>この文章はhtmlで書いています。</p>
-   <p>
-    <?php
-      echo'この文書はphpで書いています。';
-      echo'<br>';
-
-    ?>
-
+   
     <?php
     echo true;
     echo'<br>';
