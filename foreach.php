@@ -13,8 +13,8 @@ foreach ($user_names as $user_name) {
 問：配列名$user_namesと変数名$user_nameの説明をせよ
 
 正解
-$user_names：要素を取り出す配列名（複数形）
-$user_name：取り出した要素を代入する変数名（要素を取り出す配列名の単数形）
+$user_names:要素を取り出す配列名（複数形）
+$user_name:取り出した要素を代入する変数名（要素を取り出す配列名の単数形）
 
 問：繰り返し処理の回数は、何を考えればわかるか
 
